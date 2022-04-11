@@ -27,3 +27,33 @@ body{
     padding: 0 30px;
     margin: auto;
 }
+
+.box{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box > svg{
+    color: blue;
+    cursor: pointer;
+    transition: .3s ease;
+    &:hover{
+        color: purple;
+    }
+    &:active{
+        color: black;
+    }
+    transform: rotateY(40deg);
+}
+
+.element{
+    display: flex;
+    margin: auto;
+    font-size: 72px;
+    transform: scaleZ(10);    
+}
